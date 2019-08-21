@@ -1175,7 +1175,7 @@ pre {
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar-toggleable-md .navbar-nav .dropdown-menu {
     position: static;
     float: none;
@@ -1185,7 +1185,7 @@ pre {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-toggleable-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1388,25 +1388,48 @@ body {
   background-color: #149dcc;
   color: #ffffff;
 }
-.jq-selectbox .jq-selectbox__trigger-arrow {
-  border-top-color: contrast(currentColor, #000000, #ffffff, 30%);
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
 }
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
   border-top-color: #149dcc;
+  border-bottom-color: #149dcc;
 }
-.cid-rjJAnBNRHw {
-  background-image: url("../../../assets/images/background1.jpg");
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #149dcc !important;
+  box-shadow: none!important;
 }
-.cid-rjJAnBNRHw .mbr-section-subtitle {
-  letter-spacing: .2rem;
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
 }
-.cid-rjJAnBNRHw .media-container-column {
-  background-color: #4f4943;
+.cid-rzM9mbicck {
+  background-image: url("../../../assets/images/mbr-1920x1050.jpg");
 }
-@media (max-width: 767px) {
-  .cid-rjJAnBNRHw .media-container-column {
-    padding: 1rem !important;
-  }
+.cid-rzM9mbicck .mbr-section-subtitle {
+  font-style: italic;
+  letter-spacing: 1rem;
+}
+.cid-rzM9mbicck .mbr-section-title {
+  color: #232323;
+}
+.cid-rzM9mbicck .mbr-text,
+.cid-rzM9mbicck .mbr-section-btn {
+  color: #232323;
+}
+.cid-rzM9mbicck H3 {
+  color: #232323;
 }
 .cid-rjJASSHzRg {
   padding-top: 60px;
@@ -1466,6 +1489,29 @@ body {
     flex-basis: initial !important;
     padding: 0 0 2rem 0 !important;
     -webkit-flex-basis: initial !important;
+  }
+}
+.cid-rzMbxklVdH {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-rzMbxklVdH .line {
+  background-color: #f7ed4a;
+  color: #f7ed4a;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-rzMbxklVdH .section-text {
+  padding: 2rem 0;
+}
+.cid-rzMbxklVdH .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-rzMbxklVdH .inner-container {
+    width: 100% !important;
   }
 }
 .cid-rjJC41wLQR {
